@@ -8,4 +8,12 @@ func main() {
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
+
+	pow := make([]int, 10)
+	for i := range pow { // solo indince
+		pow[i] = 1<<uint(i)
+	}
+	for _, value := range pow { //ignorar el indice
+		fmt.Printf("%d\n", value)
+	}
 }

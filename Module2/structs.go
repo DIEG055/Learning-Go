@@ -12,4 +12,7 @@ func main() {
 	v := Vertex{1, 2}
 	v.X = 4
 	fmt.Println(v.X)
+
+	Doctor := struct{name string}{name: "juan"}
+	fmt.Println(Doctor)
 }
